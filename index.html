@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
@@ -49,6 +50,29 @@
 =======
       const mountedApp = app.mount('#app')
 >>>>>>> L3-start
+=======
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar"></div>
+
+      <div class="cart">Cart({{ cart.length }})</div>
+      <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app')
+>>>>>>> L11-start
     </script>
   </body>
 </html>
